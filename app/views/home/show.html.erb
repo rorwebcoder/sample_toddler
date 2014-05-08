@@ -1,0 +1,57 @@
+<style>
+.disp_img
+{
+width:200px;
+height:100px;
+float:left;
+}
+
+.disp_img:hover
+{
+cursor:pointer
+}
+
+.disp_img2
+{
+width:100px;
+height:100px;
+float:left;
+}
+
+.tg
+{
+background-color:#43B4F8;
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<input type="button" value="reload" id="ref" style="float:left;margin-top: 135px;">
+
+
+
+<div id="main" style="background-color: white;border-radius: 10px 10px 10px 10px;float: left;margin-top: 135px;padding:20px;margin-left:125px">
+				<h2>Come On Oded, No worries we can do any thing</h2>
+<div>Please click on any image so that it will hide</div>
+</div>
+
+<script>
+
+var arr = [ "/assets/1.png", "/assets/2.png", "/assets/3.png", "/assets/4.png", "/assets/5.png" ];
+var t=[]
+$.each( arr, function( i, val ) {
+t.push('<div id="im_'+ i  +'" class="disp_img"><img src="'+val+'" class="disp_img2"></img></div>')
+});
+$("#main").append(t)
+
+
+
+$("#ref").click(function() {
+		window.location.reload() 
+});
+
+$(".disp_img").click(function() {
+$(this).hide()
+});
+
+</script>
