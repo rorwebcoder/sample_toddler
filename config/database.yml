@@ -25,3 +25,10 @@ test:
   username: root
   password: root
   host: 127.0.0.1
+  
+production:
+  database: dbrfo8tshfm544
+  username: pvhvqkecjjtxhu
+  password: j_FpAuKOjEDBuIOCh_L6OdKt85
+  host: ec2-54-83-204-244.compute-1.amazonaws.com
+  port: 5432
